@@ -6,8 +6,8 @@ function rollDice(){
     let player1 = Math.round(Math.random()*5) + 1;
     let player2 = Math.round(Math.random()*5) + 1; 
     //update the image
-    let image1 = "./images/die_faces/dice-" + player1 + ".svg" 
-    let image2 = "./images/die_faces/dice-" + player2 + ".svg" 
+    let image1 = "dice-" + player1 + ".svg" 
+    let image2 = "dice-" + player2 + ".svg" 
     document.querySelector(".player-1 img").src = image1
     document.querySelector(".player-2 img").src = image2 
 
@@ -46,8 +46,8 @@ function resetGame(){
     document.querySelector(".image1").classList.add("rotate-die")
     document.querySelector(".image2").classList.add("rotate-die")
 
-    document.querySelector(".player-1 img").src = "./images/logos/dice_logo2.png.png"
-    document.querySelector(".player-2 img").src = "./images/logos/dice_logo2.png.png"
+    document.querySelector(".player-1 img").src = "dice_logo2.png.png"
+    document.querySelector(".player-2 img").src = "dice_logo2.png.png"
 
     document.querySelector(".result-box").textContent = ""
     document.querySelector(".win-result").classList.remove("result-box")
