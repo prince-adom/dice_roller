@@ -52,4 +52,7 @@ function resetGame(){
     document.querySelector(".result-box").textContent = ""
     document.querySelector(".win-result").classList.remove("result-box")
 
+    document.querySelector(".p1-name").value = "Player 1"
+    document.querySelector(".p1-name").value = "Player 2" 
+
 }
