@@ -53,6 +53,6 @@ function resetGame(){
     document.querySelector(".win-result").classList.remove("result-box")
 
     document.querySelector(".p1-name").value = "Player 1"
-    document.querySelector(".p1-name").value = "Player 2" 
+    document.querySelector(".p2-name").value = "Player 2" 
 
 }
