@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cont {
+    margin-bottom: -50px;
+}
+
+body { 
+    background: url("./images/backgrounds/gray_wall.png.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  min-height: 100%; 
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+    height: 100%;
+}
+
+.header {
+    background-color: rgba(150, 150, 151, 0.5); 
+}
+
+.rotate-die {  
+    animation: rotation 10s infinite linear; 
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(10deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  .result-box { 
+    text-align: center;
+    margin-top: 2rem;
+  }
+

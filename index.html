@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Roller Game</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous" />
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="d-flex flex-column">
+    <div class="container ">
+      <div class="header d-flex flex-row  justify-content-around align-items-center p-2">
+        <div class="icon-name d-flex flex-row justify-content-between align-items-center gap-3">
+          <img
+            src="./images/logos/dice_logo.png.png"
+            alt="die logo" height="40" />
+          <h2 class="name">Die Roller</h2>
+        </div>
+        <div class="new-game">
+          <div>
+            <button type="button" class="d-flex justify-content-center align-items-center gap-2 btn btn-primary" onclick="resetGame()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-plus-circle"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
+              </svg>New Game
+            </button>
+          </div>
+        </div> 
+        <div class="change-theme">
+
+        </div>
+        </div>
+
+      <div class="main h3 d-flex flex-column text-white">
+        <div class="players d-flex gap-5 justify-content-center m-5">
+          <div class="player-1">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Player one</label>
+                <input type="text" class="form-control p1-name" id="exampleFormControlInput1" placeholder="player one" value="Person A" maxlength="15">
+            </div> 
+            <p>Player One Score:</p>
+            <p class="p1-score h1 m-5">0</p>
+            <img src="./images/logos/dice_logo2.png.png" alt="3D dice cube" height="100" class="rotate-die image1 image">
+          </div>
+          <div class="player-2">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Player two</label>
+                <input type="text" class="form-control p2-name" id="exampleFormControlInput1" placeholder="player two" value="Person B" maxlength="15">
+            </div> 
+            <p>Player Two Score:</p>
+            <p class="p2-score h1 m-5">0</p>
+            <img src="./images/logos/dice_logo2.png.png" alt="3D dice cube" height="100" class="rotate-die image2 image">
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary w-25 align-self-center" onclick="rollDice()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-joystick" viewBox="0 0 16 16">
+<path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2z"></path>
+<path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23z"></path>
+</svg> Roll Die
+          </button>
+          <div class="win-result"></div>
+      </div>
+
+      <div class="container header my-auto mx-0">
+        <footer class="d-flex justify-content-around my-5 text-white h5 align-items-center">
+            <div class="my-name">&#64; Prince Adom</div>
+            <div class="connections">
+                <a href="#">
+                    <img src="./images/connections/instagram.png.png" alt="instagram" height="30"> </a>
+                <a href="#">
+                    <img src="./images/connections/linkedin_round.png.png" height="40" alt="linkedin"></a>
+                <a href="#">
+                    <img src="./images/connections/whatsup.png.png" alt="whatsApp" height="32"></a>
+            </div>
+        </footer>
+      </div>
+    </div> 
+</div>
+<script src="index.js" ></script>
+  </body>
+</html>
